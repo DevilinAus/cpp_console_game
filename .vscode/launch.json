@@ -1,0 +1,21 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run main.cpp",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/main", // name of compiled executable
+      "args": [], // any command line arguments
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}", // current working directory
+      "environment": [],
+      "preLaunchTask": "buildall",
+      "MIMode": "lldb",
+      "externalConsole": false
+    }
+  ]
+}
