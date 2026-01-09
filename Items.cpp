@@ -2,12 +2,12 @@
 
 #include <vector>
 
-int loadDagger(std::vector<Item>& items) {
+int loadDagger(std::vector<Item>& inventory) {
     Item dagger;
     dagger.name = "Dagger";
     dagger.type = "weapon";
     dagger.damageBonus = 1;
 
-    items.push_back(dagger);
+    inventory.push_back(dagger);
     return 0;
 }

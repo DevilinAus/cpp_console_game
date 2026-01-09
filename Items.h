@@ -10,4 +10,4 @@ struct Item {
     int usesRemaining;
 };
 
-int loadDagger(std::vector<Item>& items);
+int loadDagger(std::vector<Item>& inventory);
