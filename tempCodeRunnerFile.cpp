@@ -1,0 +1,1 @@
+ int armour = 0;
