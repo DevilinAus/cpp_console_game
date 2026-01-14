@@ -58,7 +58,7 @@ void menuLoop() {
 
 // CHARACTER SETUP
 
-Character& characterSetup() {
+Character characterSetup() {
     string playerName;
 
     cout << "What is your name?\n";
@@ -127,7 +127,7 @@ int main() {
 
     cout << CLEAR_SCREEN;
 
-    Character& player = characterSetup();
+    Character player = characterSetup();
 
     gameLoop(player, inventory);
 }
@@ -213,7 +213,8 @@ void battleLoop(Character& player, Character& enemy) {
         if (lastInput == "1") {
             int playerDamage = player.attack(enemy);
 
-            actionText = "You hit" + enemy.getName() + "for" + std::to_string(playerDamage);
+            actionText =
+                "You hit " + enemy.getName() + " for " + std::to_string(playerDamage) + "!";
         }
 
         // figureout what the actiontext is

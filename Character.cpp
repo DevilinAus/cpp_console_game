@@ -6,7 +6,7 @@ Character::Character(const std::string& name, int health, int attackPower)
     : name(name), health(health), attackPower(attackPower) {}
 
 const std::string& Character::getName() const { return name; }
-const std::string& Character::getStatusText() const {
+const std::string Character::getStatusText() const {
     return "The Goblin has " + std::to_string(health) + " health";
 }
 

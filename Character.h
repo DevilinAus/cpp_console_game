@@ -13,7 +13,7 @@ class Character {
     // virtual ~Character();  // destructor?
 
     const std::string& getName() const;
-    const std::string& getStatusText() const;
+    const std::string getStatusText() const;
     int takeDamage(int damage);
     int attack(Character& enemy);
     bool isDead();
